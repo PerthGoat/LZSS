@@ -86,7 +86,10 @@ function compressButton() {
 
 function decompressButton() {
   let the_text = document.getElementById('comp').value;
-  document.getElementById('decomp').value = decompressText(the_text);
+  let decomp_text = decompressText(the_text);
+  document.getElementById('decomp').value = decomp_text;
+  
+  console.assert(decomp_text == document.getElementById('in').value, 'decompression from the compressed string failed');
 }
 
 
