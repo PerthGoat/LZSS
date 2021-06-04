@@ -1,4 +1,4 @@
-const sliding_window_sz = 256;
+const sliding_window_sz = 1024;
 
 function compressText(str) {
   // compress
@@ -91,14 +91,3 @@ function decompressButton() {
   
   console.assert(decomp_text == document.getElementById('in').value, 'decompression from the compressed string failed');
 }
-
-
-
-//console.assert(dcmpr == d, 'decompression from the compressed string failed');
-
-//console.log(dcmpr);
-
-//console.log(`compression ratio: ${strout.length / d.length}`);
-
-//sw += match;
-//console.log(sw);
